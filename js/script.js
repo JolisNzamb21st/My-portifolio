@@ -30,3 +30,86 @@ function showPopup(bool) {
     document.getElementById('popup').style.visibility = 'hidden'
   }
 }
+
+// let isShown = false;
+
+// function showMoreSkills() {
+//   const otherSkills = document.getElementsByClassName('other_skills');
+//   const button = document.getElementById('showSkills');
+
+//   for (let i = 0; i < otherSkills.length; i++) {
+//     otherSkills[i].style.display = isShown ? 'none' : 'block';
+//   }
+
+//   button.innerText = isShown ? 'Show More Skills' : 'Show Less';
+
+//   if (!isShown) {
+//     setTimeout(() => {
+//       button.scrollIntoView({ behavior: 'smooth', block: 'center' });
+//     }, 300); // delay a bit for smoother experience
+//   }
+
+//   isShown = !isShown;
+// }
+
+// let isShown = false;
+
+// function showMoreSkills() {
+//   const otherSkills = document.getElementsByClassName('other_skills');
+//   const button = document.getElementById('showSkills');
+
+//   if (isShown) {
+//     // Reload to reset page and styles
+//     location.reload();
+//     return;
+//   }
+
+//   for (let i = 0; i < otherSkills.length; i++) {
+//     otherSkills[i].style.display = 'block';
+//   }
+
+//   button.innerText = 'Show Less';
+
+//   setTimeout(() => {
+//     button.scrollIntoView({ behavior: 'smooth', block: 'center' });
+//   }, 300);
+
+//   isShown = true;
+// }
+
+
+let isShown = false;
+
+function showMoreSkills() {
+  const otherSkills = document.getElementsByClassName('other_skills');
+  const button = document.getElementById('showSkills');
+
+  if (isShown) {
+    // Scroll to the first visible skill before reloading
+    const firstSkill = document.querySelector('.skill:not(.other_skills)');
+    if (firstSkill) {
+      firstSkill.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    // Wait a moment after scroll, then reload
+    setTimeout(() => {
+      location.reload();
+    }, 600); // Wait just enough for scroll animation
+
+    return;
+  }
+
+  // Show hidden skills
+  for (let i = 0; i < otherSkills.length; i++) {
+    otherSkills[i].style.display = 'block';
+  }
+
+  button.innerText = 'Show Less';
+
+  // Scroll to button after showing
+  setTimeout(() => {
+    button.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }, 300);
+
+  isShown = true;
+}

@@ -416,4 +416,26 @@ button:hover {
   text-align: center;
   cursor: pointer;
 }
- 
+
+.other_skills{
+  display: none;
+}
+/* 
+.other_skills {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.other_skills.show {
+  opacity: 1;
+  max-height: 500px;
+  margin-top: 10px;
+} */
+
+/* styling the github skills button */
+/* .git_skills_btn{
+  margin-top: -10cm;
+}
+  */
