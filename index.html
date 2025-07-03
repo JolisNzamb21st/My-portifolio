@@ -52,7 +52,7 @@
         </div>
       </div>    
     </nav> -->
-
+<!-- 
 
 
     <nav class="navbar navbar-expand-lg bg-primary border-bottom border-body wraping" data-bs-theme="dark">
@@ -104,14 +104,75 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav> -->
+
+
+    
+
+
+    <header>
+      <nav>
+        <div class="profile_name " >
+        Jolis Nzambimana
+          <div class="contact_info ">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+           <a href="mailto:nzambimanafranck@gmail.com">Email Me</a> 
+          </div>
+
+          <div style="clear:both;"></div>
+
+          <div class="contact_info ">
+            <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+
+            +256789172498
+
+          </div>
+        </div> 
+       <div id="navlinks_toggle">
+         <ul id="menuList" >
+
+            <li class="nav-item">
+            <a class="nav-link scrollto" href="#about-me" style="color: white;">About Me</a>
+            </li>
+
+            <li class="nav-item">
+            <a class="nav-link scrollto" href="#skills">Skills</a>
+            </li>
+
+            <li class="nav-item">
+            <a class="nav-link scrollto" href="#projects">Projects</a>
+            </li>
+
+            <li class="nav-item">
+            <a class="nav-link scrollto" href="#certifications">Certifications</a>
+            </li>
+
+            <li class="nav-item">
+            <a class="nav-link scrollto" href="#recommendations">Recommendation</a>
+            </li>
+        </ul>
+
+        <div class="menu-icon">
+          <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+
+       </div>
+        
+
+
+      </nav>
+    </header>
+    
 
    <!-- <h2>About Me</h2>  -->
    
    <div style="clear: both;"></div>
 
     <section id="about-me">
+        <pre>
 
+            
+        </pre>
       <div class = "container-fluid">
         <div class = "row">
 
@@ -140,6 +201,10 @@
               
     <!-- Skills -->
     <section id="skills">
+        <pre>
+
+
+        </pre>
       <h2>Skills</h2>
       <div style="clear:both;"></div>
 
@@ -229,6 +294,10 @@
           
     <!-- Projects -->
     <section class="projects" id="projects">
+        <pre>
+
+            
+        </pre>
       <h2>
         Recent Projects
       </h2>
@@ -267,6 +336,10 @@
     <!-- Certifications -->
     
     <section class="certifications" id="certifications">
+        <pre>
+
+            
+        </pre>
       <h2>
         International Certifications <span>| Coursera</span>
       </h2>
@@ -305,6 +378,10 @@
 
     <!-- Recommendations -->
     <section id="recommendations">
+        <pre>
+
+            
+        </pre>
       <h2>Recommendations</h2>
       <div style="clear:both;"></div>
       <div class="all_recommendations" id="all_recommendations">
@@ -361,6 +438,22 @@
     
     <footer >
     </footer>
+    <script src="https://kit.fontawesome.com/4c25690c80.js" crossorigin="anonymous"></script>
 
+    <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "300px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+        
+    </script>
   </body>
 </html>
