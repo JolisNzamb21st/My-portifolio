@@ -124,4 +124,20 @@ function showMoreSkills() {
   }, 300);
 
   isShown = true;
-}
+};
+document.addEventListener("DOMContentLoaded", () => {
+  const progressBars = document.querySelectorAll(".progress-bar");
+
+  function animateBars() {
+    progressBars.forEach(bar => {
+      const level = bar.getAttribute("data-level");
+      const rect = bar.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 50) {
+        bar.style.width = level;
+      }
+    });
+  }
+
+  window.addEventListener("scroll", animateBars);
+  animateBars(); // trigger once if visible
+});
