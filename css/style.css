@@ -174,7 +174,15 @@ flex-wrap: wrap;
   /* padding-top: 100px; */
 
 }
-
+.about-me-section .profile-pic {
+  width: 25%;
+}
+.about-me-section .intro-section {
+  width: 70%;
+  margin-left: 2cm;
+  font-family: 'Courier New', Courier, monospace !important;
+  font-size: 18px;
+}
 /* .intro-section {
   text-align: justify;
   font-size: 30px;
@@ -235,7 +243,7 @@ text-decoration: none;
 } */
 
 .skills-group {
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -565,6 +573,7 @@ button:hover {
     
    nav ul{
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
     font-size: 12px;
     align-items: center;
@@ -635,7 +644,16 @@ text-decoration: none;
   color: rgb(128, 128, 128);
   
 }
-
+}
+.about-me-section .profile-pic {
+  width: 25%;
+}
+.about-me-section .intro-section {
+  width: 70%;
+  margin-left: 2cm;
+  font-family: 'Courier New', Courier, monospace !important;
+  font-size: 18px;
+}
 
   }
 /* Tablet view fin*/
