@@ -73,10 +73,15 @@ nav{
 .profile_name .contact_info {
   font-size: 15px;
   font-style: italic;
+  color: white;
   display: flex;
+  gap: 10px;
   align-items: center;
   color:lightgrey
   /* flex-direction: row; */
+}
+.email_info{
+  text-decoration: none;
 }
 
 .profile_name .contact_info a{
