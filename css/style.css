@@ -80,7 +80,7 @@ nav{
   color:lightgrey
   /* flex-direction: row; */
 }
-.email_info{
+.email_info a{
   text-decoration: none;
 }
 
