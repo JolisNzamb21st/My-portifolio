@@ -169,7 +169,7 @@ color: lightblue;
 
 .about-me-section {
   display: flex;
-
+flex-wrap: wrap;
   align-items: center;
   /* padding-top: 100px; */
 
@@ -235,6 +235,7 @@ text-decoration: none;
 } */
 
 .skills-group {
+  margin-top: 1rem;
   margin-bottom: 2rem;
 }
 
@@ -593,7 +594,7 @@ nav ul li a{
 
 .about-me-section {
   display: flex;
-
+flex-wrap: wrap;
   align-items: center;
   /* padding-top: 100px; */
 
