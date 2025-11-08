@@ -77,26 +77,19 @@ nav{
   display: flex;
   gap: 10px;
   align-items: center;
-  color:lightgrey
+  color:white;
   /* flex-direction: row; */
 }
-.email_info a{
+.profile_name .contact_info .email_info a{
   text-decoration: none;
 }
-
-.profile_name .contact_info a{
-  
-  color:lightgrey
-  
+.profile_name .contact_info .whatsapp_info a{
+  text-decoration: none;
 }
-
-
-.contact_info img {
-  width:25px;
-  margin-right: 10px;
-  float:left; 
+.profile_name .contact_info .whatsapp_info a:hover{
+  text-decoration: underline;
+  color: lightblue;
 }
-
 /* Contact infos Fin =========================================================================================================== */
 
 /* Navigation links start */
@@ -168,7 +161,7 @@ nav ul li a{
 }
 
 
-/* Mobile view start Fin ==================================================================================== */
+/* Mobile view Fin ==================================================================================== */
 
 
 /* Navigation Bar */
@@ -244,10 +237,11 @@ color: lightblue;
 
 /* About Me */
 
-#about-me {
+.about-me-section {
   display: flex;
+
   align-items: center;
-  padding-top: 100px;
+  /* padding-top: 100px; */
 
 }
 
