@@ -1,176 +1,104 @@
-
-
-<!-- this is the initial project.The goal is to add features proressively until it becomes more interactive and responsive -->
-
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
+
+    <!-- Character Encoding -->
+    <meta charset="UTF-8" />
+
+    <!-- Viewport (Responsive Design) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jolis Nzambimana - Portfolio</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    
+
+    <!-- Title -->
+    <title>Jolis Nzambimana | Web Developer Portfolio</title>
+
+    <!-- Meta Description (SEO) -->
+    <meta
+      name="description"
+      content="Portfolio of Jolis Nzambimana — a front-end web developer passionate about creating clean, responsive, and user-centered websites."
+    >
+
+    <!-- Meta Keywords (useful for niche targeting) -->
+    <meta
+      name="keywords"
+      content="Jolis Nzambimana, web developer, front-end developer, portfolio, HTML, CSS, JavaScript, React"
+    >
+
+    <!-- Author -->
+    <meta name="author" content="Jolis Nzambimana" >
+    <!-- Primary Color Theme -->
+    <meta name="theme-color" content="#0a192f" />
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.png" type="image/png" />
+
+    <!-- Font Awesome (Icons) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-sV7Z2x+Xo9...etc"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    >
+
+    <!-- Google Fonts -->
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    /> -->
+    <!-- <link 
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" 
+      rel="stylesheet"
+    /> -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/style.css" />
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   </head>
   <body>
-    <!-- Navigation Bar -->
 
-    <!-- <nav>
-      <div id="home">
+    <!-- ==================== NAVBAR ==================== -->
+    <header class="navbar">
+      <div class="container nav-container">
+        <!-- ===== Left Section ===== -->
+        <div class="navbar-left">
+          <h1 class="logo">Jolis <span>Nzambimana</span></h1>
 
-        <div class="profile_name">
-
-          Jolis Nzambimana
-          <div class="contact_info">
-            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
-            nzambimanafranck@gmail.com
+          <div class="contact-info">
+            <a href="mailto:nzambimanafranck@gmail.com" class="email">
+              <i class="fas fa-envelope"></i>
+              nzambimanafranck@gmail.com
+            </a>
+            <a href="https://wa.me/254707424177" target="_blank" class="whatsapp">
+              <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
           </div>
-
-          <div style="clear:both;"></div>
-
-          <div class="contact_info">
-            <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
-
-
-            +256789172498
-
-   
-
-          </div>
-
         </div>
 
-        <div class="topdiv">
-          <a class="topmenu" href="#about-me">About Me</a>
-          <a class="topmenu" href="#skills">Skills</a>
-          <a class="topmenu" href="#projects">Projects</a>
-          <a class="topmenu" href="#recommendations">Recommendation</a>
-
-        </div>
-      </div>    
-    </nav> -->
-<!-- 
-
-
-    <nav class="navbar navbar-expand-lg bg-primary border-bottom border-body wraping" data-bs-theme="dark">
-      <div class="profile_name  bg-primary" id="home" >
-        Jolis Nzambimana
-          <div class="contact_info ">
-            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
-           <a href="mailto:nzambimanafranck@gmail.com">nzambimanafranck@gmail.com</a> 
-          </div>
-
-          <div style="clear:both;"></div>
-
-          <div class="contact_info ">
-            <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
-
-            +256789172498
-
-   
-
-          </div>
-      </div>
-      <div class="container-fluid  float-right">
-        <a class="navbar-brand" href="#home">Home</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#about-me">About Me</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#skills">Skills</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#projects">Projects</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#certifications">Certifications</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#recommendations">Recommendation</a>
-            </li>
-
+        <!-- ===== Right Section ===== -->
+        <div class="navbar-right">
+          <ul class="nav-links">
+            <li><a href="#about-me">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#recommendations">Recommendations</a></li>
           </ul>
+
+          <!-- Hamburger Icon for Mobile -->
+          <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
         </div>
       </div>
-    </nav> -->
-
-
-    
-
-
-    <header>
-      <nav>
-        <div class="profile_name " >
-        Jolis Nzambimana
-          <div class="contact_info whatsapp_info">
-            <i class="fab fa-whatsapp"></i>
-            <a href="https://wa.me/254707424177" target="_blank">Contact Me on WhatsApp</a>
-         </div>
-
-        <div class="contact_info email_info">
-          <i class="fas fa-envelope"></i>
-          <a href="mailto:nzambimanafranck@gmail.com">Email me at: nzambimanafranck@gmail.com</a>
-        </div>
-        </div> 
-       <div id="navlinks_toggle">
-         <ul id="menuList" >
-
-            <li class="nav-item">
-            <a class="nav-link scrollto" href="#about-me" style="color: white;">About Me</a>
-            </li>
-
-            <li class="nav-item">
-            <a class="nav-link scrollto" href="#skills">Skills</a>
-            </li>
-
-            <li class="nav-item">
-            <a class="nav-link scrollto" href="#projects">Projects</a>
-            </li>
-
-            <li class="nav-item">
-            <a class="nav-link scrollto" href="#certifications">Certifications</a>
-            </li>
-
-            <li class="nav-item">
-            <a class="nav-link scrollto" href="#recommendations">Recommendation</a>
-            </li>
-        </ul>
-
-        <div class="menu-icon">
-          <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
-        </div>
-
-       </div>
-        
-
-
-      </nav>
     </header>
+ 
     
-    <pre>
-
-
-
-
-
-
-    </pre>
    <!-- <h2>About Me</h2>  -->
    
-    <section id="about-me" >
+    <!-- <section id="about-me" >
        
       <div class="about-me-section">
 
@@ -203,113 +131,105 @@
       </div>
 
 
-    </section>
+    </section> -->
+    <section id="about-me" class="about">
+  <!-- Profile Section -->
+  <div class="profile">
+
+    <!-- Photo + Location Wrapper -->
+    <div class="profile-header">
+      <img src="html_finalprojimages/My-profi_pic3.jpg" alt="Jolis Nzambimana" class="profile-photo">
+      <p class="location">
+        <i class="fas fa-map-marker-alt"></i> Kampala, Uganda
+      </p>
+    </div>
+
+    <div class="social-links">
+      <a href="https://github.com/jolisnzamb21st" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/jolis-nzambimana" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://x.com/JN32801" target="_blank"><i class="fab fa-x-twitter"></i></a>
+    </div>
+
+    <a href="mailto:nzambimanafranck@gmail.com" class="cta-btn">
+      <i class="fas fa-calendar-alt"></i> Schedule a call
+    </a>
+
+  </div>
+
+  <!-- Intro Section -->
+  <div class="intro">
+
+    <h2 class="name">Jolis Nzambimana</h2>
+    <p class="role">Front-End Developer | React, Django</p>
+
+    <p>
+      Self-taught Front-End Developer from Uganda, passionate about building clean and
+      user-friendly web experiences. Skilled in modern web technologies including
+      React and Django. Dedicated to creating impactful digital solutions for communities.
+    </p>
+  </div>
+</section>
+
+
               
     <!-- Skills -->
-  <section id="skills" class="skills-section">
-  <h2>My Skills</h2>
- <br>
- 
-  <!-- Front-End Group -->
+ <section id="skills" class="skills-section container">
+  <h2 class="section-title">Skills</h2>
+  <p class="section-subtitle">Technical expertise and tools I use to build impactful web experiences.</p>
+<div class="skills-grid">
   <div class="skills-group">
-    <h3>Front-End / UI</h3>
-    <div class="skills-container">
-      <!-- <div class="skill-card">
-        <img src="icons/html5.svg" alt="HTML5" class="skill-icon">
-        <h4>HTML5</h4>
-        <div class="progress">
-          <div class="progress-bar" data-level="90%"></div>
-        </div>
-        <p class="level-text">Advanced</p>
-      </div> -->
-      <div class="skill-card">
-        <i class="devicon-html5-plain colored skill-icon"></i>
-        <h4>HTML5</h4>
-        <div class="progress">
-          <div class="progress-bar" data-level="90%"></div>
-        </div>
-        <p class="level-text">Advanced</p>
-      </div>
-       
-
-      <div class="skill-card">
-        <i class="devicon-css3-plain colored"></i>
-        <h4>CSS3</h4>
-        <div class="progress">
-          <div class="progress-bar" data-level="85%"></div>
-        </div>
-        <p class="level-text">Advanced</p>
-      </div>
-
-      <div class="skill-card">
-        <i class="devicon-javascript-plain colored"></i>
-        <h4>JavaScript</h4>
-        <div class="progress">
-          <div class="progress-bar" data-level="75%"></div>
-        </div>
-        <p class="level-text">Intermediate</p>
-      </div>
-
-      <div class="skill-card">
-        <i class="devicon-react-original colored"></i>
-        <h4>React</h4>
-        <div class="progress">
-          <div class="progress-bar" data-level="70%"></div>
-        </div>
-        <p class="level-text">Intermediate</p>
-      </div>
+    <h3 class="skills-category">Frontend Development</h3>
+    <div class="skill">
+      <p>HTML</p>
+      <div class="progress-bar"><span style="width: 95%"></span></div>
+    </div>
+    <div class="skill">
+      <p>CSS</p>
+      <div class="progress-bar"><span style="width: 90%"></span></div>
+    </div>
+    <div class="skill">
+      <p>JavaScript</p>
+      <div class="progress-bar"><span style="width: 85%"></span></div>
+    </div>
+    <div class="skill">
+      <p>React</p>
+      <div class="progress-bar"><span style="width: 80%"></span></div>
     </div>
   </div>
 
-
-  <!-- Back-End Group -->
   <div class="skills-group">
-    <h3>Back-End & Tools</h3>
-    <div class="skills-container">
-      <div class="skill-card">
-       <i class="devicon-python-plain colored"></i>
-        <h4>Python</h4>
-        <div class="progress">
-          <div class="progress-bar" data-level="60%"></div>
-        </div>
-        <p class="level-text">Beginner</p>
-      </div>
-
-      <div class="skill-card">
-        <i class="devicon-git-plain colored"></i>
-        <h4>Git & GitHub</h4>
-        <div class="progress">
-          <div class="progress-bar" data-level="75%"></div>
-        </div>
-        <p class="level-text">Intermediate</p>
-      </div>
-
-       <!--  Figma -->
-      <div class="skill-card">
-        <i class="devicon-figma-plain colored skill-icon"></i>
-        <h4>Figma</h4>
-        <div class="progress">
-          <div class="progress-bar" data-level="65%"></div>
-        </div>
-        <p class="level-text">Intermediate</p>
-      </div>
-
-      <!--  WordPress -->
-      <div class="skill-card">
-        <i class="devicon-wordpress-plain colored skill-icon"></i>
-        <h4>WordPress</h4>
-        <div class="progress">
-          <div class="progress-bar" data-level="80%"></div>
-        </div>
-        <p class="level-text">Advanced</p>
-      </div>
+    <h3 class="skills-category">Backend Development</h3>
+    <div class="skill">
+      <p>Django</p>
+      <div class="progress-bar"><span style="width: 75%"></span></div>
+    </div>
+    <div class="skill">
+      <p>REST APIs</p>
+      <div class="progress-bar"><span style="width: 70%"></span></div>
     </div>
   </div>
+
+  <div class="skills-group">
+    <h3 class="skills-category">Tools & Version Control</h3>
+    <div class="skill">
+      <p>Git & GitHub</p>
+      <div class="progress-bar"><span style="width: 85%"></span></div>
+    </div>
+    <div class="skill">
+      <p>VS Code</p>
+      <div class="progress-bar"><span style="width: 90%"></span></div>
+    </div>
+    <div class="skill">
+      <p>NPM</p>
+      <div class="progress-bar"><span style="width: 75%"></span></div>
+    </div>
+  </div>
+</div>
 </section>
 
           
     <!-- Projects -->
-    <section class="projects" id="projects">
+    <!-- <section class="projects" id="projects">
         <pre>
 
             
@@ -347,10 +267,70 @@
           </div>
         </div>
     </section>
-    <div style="clear:both;"></div>
+    <div style="clear:both;"></div> -->
+<section id="projects" class="projects-section">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="projects-grid">
+
+    <!-- ===== Project Card 1 ===== -->
+    <div class="project-card">
+      <img src="project1.jpg" alt="Project screenshot" class="project-img">
+
+      <h3 class="project-title">Child Immunization Management System with SMS Reminder</h3>
+      <p class="project-desc">
+This system enables health facilities to efficiently manage child immunization programs by
+digitizing patient records and vaccine schedules. The platform allows nurses to register children,
+track upcoming and overdue immunizations, and generate real-time updates on each child’s vaccination 
+status. A built-in SMS module sends automated reminders to parents ahead of each appointment, reducing
+missed vaccinations and improving health outcomes.The system enhances reliability, organization,
+ and communication within low-resource settings.
+      </p>
+
+      <div class="project-tags">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>PHP</span>
+        <span>Bootstrap</span>
+      </div>
+
+      <div class="project-links">
+        <a href="#" class="btn">Live Demo</a>
+        <a href="#" class="btn secondary">GitHub</a>
+      </div>
+    </div>
+
+    <!-- ===== Project Card 2 ===== -->
+    <div class="project-card">
+      <img src="html_finalprojimages/project2.JPG" alt="Project screenshot" class="project-img">
+
+      <h3 class="project-title">Portfolio template</h3>
+      <p class="project-desc">
+        This portfolio website is a personal branding project designed to showcase my journey as a developer. The site highlights my skills, projects, certifications, and professional profile in a clean, responsive, and user-friendly design. I built it using modern HTML, CSS, and JavaScript principles with a strong focus on mobile-first responsiveness. The structure is component-based and optimized for clarity, readability, and visual balance. This project reflects my growth, attention to detail, and commitment to delivering professional-quality web experiences.
+      </p>
+
+      <div class="project-tags">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>UI/UX</span>
+      </div>
+
+      <div class="project-links">
+        <a href="#" class="btn">Live Demo</a>
+        <a href="#" class="btn secondary">GitHub</a>
+      </div>
+    </div>
+
+    
+
+  </div>
+  
+</section>
 
     <!-- Certifications -->
-    
+<!--     
     <section class="certifications" id="certifications">
         <pre>
 
@@ -360,13 +340,7 @@
         International Certifications <span>| Coursera</span>
       </h2>
       <div style="clear:both;"></div>
-        <!-- <div>
-
-          Web Design for Everybody: Basics of Web Development & Coding Specialization- University of Michigan
-          
-          
-          
-          </div> -->
+        
         <div id="certifications-container" class="certifications-container">
 
           <div class="certification">
@@ -389,71 +363,170 @@
           </a>
         </div>
     </section>
-    <div style="clear:both;"></div>
+    <div style="clear:both;"></div> -->
+
+<section id="certifications" class="certifications">
+
+  <h2 class="section-title">Certifications</h2>
+
+  <!-- ======================
+        PROFESSIONAL CERTS
+  ====================== -->
+  <h3 class="cert-subtitle">Professional Certificates</h3>
+<div class="cert-list professional-list">
+
+  <!-- <div class="cert-item">
+    <h4 class="cert-name">IBM Front-End Developer</h4>
+    <p class="cert-org">IBM / Coursera</p>
+    <p class="cert-date">2025</p>
+    <a href="#" class="verify-link">View Certificate</a>
+  </div>
+
+  <div class="cert-item">
+    <h4 class="cert-name">IBM Data Science Professional Certificate</h4>
+    <p class="cert-org">IBM / Coursera</p>
+    <p class="cert-date">2024</p>
+    <a href="#" class="verify-link">View Certificate</a>
+  </div> -->
+  <div class="cert-item">
+  <i class="fa-solid fa-laptop-code cert-icon"></i>
+  <h4 class="cert-name">IBM Front-End Developer</h4>
+  <p class="cert-org">IBM / Coursera</p>
+  <p class="cert-date">2025</p>
+  <a href="#" class="verify-link">View Certificate</a>
+</div>
+
+<div class="cert-item">
+  <i class="fa-solid fa-database cert-icon"></i>
+  <h4 class="cert-name">IBM Data Science Professional Certificate</h4>
+  <p class="cert-org">IBM / Coursera</p>
+  <p class="cert-date">2024</p>
+  <a href="#" class="verify-link">View Certificate</a>
+</div>
 
 
-    <!-- Recommendations -->
-    <section id="recommendations">
-        <pre>
+</div>
 
-            
-        </pre>
-      <h2>Recommendations</h2>
-      <div style="clear:both;"></div>
-      <div class="all_recommendations" id="all_recommendations">
-        <div class="recommendation">
-          <span>&#8220;</span>
-          Jolis is a very quick learner and is good at of Web development. 
-          He has also great skills related to problem solving.
-        
-          <span>&#8221;</span>
-        </div>
-        <div class="recommendation">
-          <span>&#8220;</span>
-          I have worked with Mr.Jolis and I can recommend to anybody that he is good collaborator.
-          <span>&#8221;</span>
-        </div>
-        <div class="recommendation">
-          <span>&#8220;</span>
-          I had worked along with Jolis .He really knows what to do as far as web development is concerned. 
-          
-          <span>&#8221;</span>
-        </div>
-      </div>
-    </section>
+  <!-- ======================
+         OTHER CERTS
+  ====================== -->
+  
+   <h3 class="cert-subtitle">Other Certificates</h3>
+<div class="cert-list other-list">
 
-    <!-- Recommendation Form -->
-    <section id="contact">
-      <div class="flex_center">
-        <fieldset>
-          <legend class="introduction">Leave a Recommendation</legend>          
-          <input type="text" id="title" placeholder="Name (Optional)"> <br/>
-          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Recommendation message"></textarea>
-          <div class="flex_center">
-            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
-          </div>
-        </fieldset>
-      </div>
-    </section>
+  <div class="cert-item">
+    <h4 class="cert-name">Python for Everybody Specialization</h4>
+    <p class="cert-org">University of Michigan</p>
+    <p class="cert-date">2024</p>
+    <a href="#" class="verify-link">View Certificate</a>
+  </div>
+
+  <div class="cert-item">
+    <h4 class="cert-name">Responsive Web Design</h4>
+    <p class="cert-org">FreeCodeCamp</p>
+    <p class="cert-date">2025</p>
+    <a href="#" class="verify-link">View Certificate</a>
+  </div>
+
+</div>
+
+
+</section>
     
-    <div class="iconbutton">
-      <a href="#about-me">
-        <img >
-       </img>
-       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-      </svg>
-      </a>
+<section id="contact" class="contact-section">
+
+  <h2 class="section-title">Contact</h2>
+
+  <div class="contact-container">
+
+    <!-- ===== Left: Contact Info ===== -->
+    <div class="contact-info">
+      <p class="contact-text">
+      Have you a project in mind?
+      </p>
+
+      <p class="contact-text">
+        I’m always open to new opportunities, collaborations, or simply connecting.  
+        Feel free to reach out!
+      </p>
+
+      <div class="contact-item">
+        <i class="fa-solid fa-envelope"></i>
+        <span>jolisnzambimana@gmail.com</span>
+      </div>
+
+      <div class="contact-item">
+        <i class="fa-solid fa-phone"></i>
+        <span>+254 707424177</span>
+      </div>
+
+      <div class="contact-item">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>Nairobi, Kenya</span>
+      </div>
+
     </div>
 
-    <div class="popup" id="popup" class="flex_center">
-      <img src="html_finalprojimages/checkmark--outline.svg"/>
-      <h3 id="confirm">Thank you for leaving a recommendation</h3>
-      <button onclick="showPopup(false)">Ok</button>
+    <!-- ===== Right: Contact Form ===== -->
+    <form class="contact-form">
+
+      <div class="form-group">
+        <label>Your Name</label>
+        <input type="text" placeholder="Enter your name">
+      </div>
+
+      <div class="form-group">
+        <label>Your Email</label>
+        <input type="email" placeholder="Enter your email">
+      </div>
+
+      <div class="form-group">
+        <label>Your Message</label>
+        <textarea placeholder="Type your message"></textarea>
+      </div>
+
+      <button class="btn send-btn">Send Message</button>
+
+    </form>
+
+  </div>
+
+</section>
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- Branding -->
+    <div class="footer-brand">
+      <h3 class="footer-logo">Jolis Nzambimana</h3>
+      <p class="footer-tagline">Front-End Developer | React & Django Enthusiast</p>
     </div>
-    
-    <footer >
-    </footer>
+
+    <!-- Quick Links -->
+    <ul class="footer-links">
+      <li><a href="#about-me">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <!-- Social Icons -->
+    <div class="footer-social">
+      <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://wa.me/254707424177" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+
+  </div>
+
+  <p class="footer-bottom">
+    © 2025 Jolis Nzambimana. All Rights Reserved.
+  </p>
+
+</footer>
+
+
     <script src="https://kit.fontawesome.com/4c25690c80.js" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
     
